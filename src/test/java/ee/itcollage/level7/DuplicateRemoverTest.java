@@ -3,6 +3,7 @@ package ee.itcollage.level7;
 import com.google.common.collect.Lists;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -24,5 +25,6 @@ public class DuplicateRemoverTest {
         List<Integer> initialList = Lists.newArrayList(1, 1, 1);
         List<Integer> duplicateFreeList = DuplicateRemover.removeDuplicates(initialList);
         assertEquals(Arrays.asList(1), duplicateFreeList);
+        //assertEquals( Lists.newArrayList(1) , duplicateFreeList);
     }
 }

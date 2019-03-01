@@ -5,10 +5,24 @@ public class LargestNumbest {
     //todo make tests work
 
     public static int pickLargest(int x1, int x2){
-        return x1;
+        if(x1 > x2)
+        {
+            return x1;
+        }
+        else
+            return x2;
     }
 
     public static int pickLargest(int x1, int x2, int x3){
-        return x1;
+        if( (x1 > x2) && (x1 > x3))
+        {
+            return x1;
+        }
+        else if( (x2 > x1 ) && (x2 > x3))
+        {
+            return x2;
+        }
+        else
+            return x3;
     }
 }
